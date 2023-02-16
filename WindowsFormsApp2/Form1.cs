@@ -26,8 +26,17 @@ namespace WindowsFormsApp2
                 DateTime start_date = dateTimePicker1.Value.Date;
                 DateTime end_date = dateTimePicker2.Value.Date;
                 int start_year = start_date.Year;
-                int end_year = end_date.Year;   
-            
+                int end_year = end_date.Year;
+            // Зацикливание за выбранные годы
+            for (int year = start_year; year <= end_year; year++)
+            {
+                // Цикл в течение месяцев в году
+                for (int month = 1; month <= 12; month++)
+                {
+
+                }
+            }
+
         }
     }
 }
